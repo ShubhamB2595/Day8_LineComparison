@@ -6,6 +6,8 @@ public class LineComparison {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		lineEquality();
+		System.out.println(" ");
 		lineComparing();
 		
 	}
@@ -21,9 +23,9 @@ public class LineComparison {
 	//method for comparing two lines
 	private static void lineEquality() {
 		Integer line1 = lengthOfLine(2, 2, 4, 5);
-		System.out.println("Length of the line: " + line1);
+		System.out.println("Length of the line1: " + line1);
 		Integer line2 = lengthOfLine(1, 2, 3, 4);
-		System.out.println("Length of the line: " + line2);
+		System.out.println("Length of the line2: " + line2);
 		boolean result = line1.equals(line2);
 		if (result) {
 			System.out.println("Line1 and line2 are equal in length");
@@ -37,9 +39,9 @@ public class LineComparison {
 	
 	private static void lineComparing() {
 		Integer line1 = lengthOfLine(1, 2, 3, 4);
-		System.out.println("Length of the line: " + line1);
+		System.out.println("Length of the line1: " + line1);
 		Integer line2 = lengthOfLine(8, 6, 2, 2);
-		System.out.println("Length of the line: " + line2);
+		System.out.println("Length of the line2: " + line2);
 		int result = line1.compareTo(line2);
 		if (result == 1) {
 			System.out.println("Length of line1 is greater line2");
